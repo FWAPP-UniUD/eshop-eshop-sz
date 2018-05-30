@@ -8,7 +8,7 @@ import config from './config';
 
 import products from './products';
 
-mongoose.connect(config.db);
+//mongoose.connect(config.db);
 
 const app = express();
 
@@ -44,3 +44,6 @@ app.use(function(err, req, res, next) {
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
+
+
+//$('.cart-items').text((store.get('cart') || []).length);
